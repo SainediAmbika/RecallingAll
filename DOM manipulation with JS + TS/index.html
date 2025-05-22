@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation with TS & JS</title>
+    <style>
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .faq-question {
+            background: none;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            text-align: left;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 5px;
+            color: #444;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="faq">
+        <div class="faq-item">
+            <button class="faq-question"> <span class="symbol"> ➕ </span> What payment methods do you accept?</button>
+            <div class="faq-answer">We accept a variety of payment methods, including major credit and debit cards,
+                online payment platforms, and mobile wallets.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> <span class="symbol"> ➕ </span> Can I pay with a credit/debit card?</button>
+            <div class="faq-answer">Yes, we accept all major credit and debit cards, including Visa, Mastercard,
+                American Express, and Discover.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> <span class="symbol"> ➕ </span> Do you accept PayPal or other online payment
+                platforms?</button>
+            <div class="faq-answer">Yes, we accept PayPal. Other supported online platforms may vary depending on your
+                location and will be shown at checkout.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> <span class="symbol"> ➕ </span> Can I use a prepaid card or virtual wallet for
+                payment?</button>
+            <div class="faq-answer">Yes, prepaid cards and virtual wallets (such as Apple Pay, Google Pay, or Samsung
+                Pay) are accepted, provided they are supported by our payment processor and have sufficient funds.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> <span class="symbol"> ➕ </span> Can I use mobile payment options like Apple
+                Pay or Google Pay?</button>
+            <div class="faq-answer">Absolutely! We accept Apple Pay, Google Pay, and other mobile payment methods where
+                available. These options will appear during checkout if your device supports them.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> <span class="symbol"> ➕ </span> Can I pay with a gift card or store credit?
+            </button>
+            <div class="faq-answer">Yes, you can use a valid gift card or store credit issued by us. Simply enter the
+                code at checkout.</div>
+        </div>
+
+
+    </div>
+        <script src="tsdommanipulation.js"></script>
+    <!-- <script src="jsdommanipulation.js"></script> -->
+</body>
+
+</html>
