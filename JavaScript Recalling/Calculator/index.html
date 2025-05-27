@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <input id="first-input" placeholder="First input">
+        <p> + </p>
+        <input id="second-input" placeholder="Second input">
+        <button class="button"> = </button>
+        <br>
+        <p class="screen"></p>
+    </div>
+
+    <script>
+        const button = document.querySelector(".button");
+        const firstInput = document.querySelector("#first-input");
+        const secondInput = document.querySelector("#second-input");
+        const screen = document.querySelector(".screen");
+        function addnums(a, b) {
+if (typeof a === 'number' && typeof b === 'number'){
+screen.innerHTML = a + b;
+}
+else screen.innerHTML = parseInt(a)+ parseInt(b);
+        }
+        button.addEventListener("click", () => addnums(firstInput.value , secondInput.value));
+
+
+    </script>
+</body>
+
+</html>

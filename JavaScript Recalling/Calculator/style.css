@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(130, 217, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    /* height: 100vh; */
+    display: grid;
+    gap: 5px;
+    
+
+}
+
+input, button, p {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    border-color: white;
+}
